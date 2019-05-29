@@ -15,7 +15,7 @@ add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_side
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 
 //remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+//remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 //remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 
 // Include PHP file for AJAX
@@ -93,7 +93,7 @@ class SWPVideoTemplate {
 		if( !is_admin() ) {
 
 			// DISPLAY VIDEO
-			add_action( 'genesis_before_content_sidebar_wrap', array( $this, 'swp_display_video_func' ) );
+			add_action( 'genesis_entry_header', array( $this, 'swp_display_video_func' ), 8 );
 
 			// DISPLAY LIST-ICONINFO
 			add_action( 'genesis_before_sidebar_widget_area', array( $this, 'swp_display_listiconinfo_func' ) );
