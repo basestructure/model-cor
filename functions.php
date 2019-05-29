@@ -111,7 +111,8 @@ add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
 
 // Adds image sizes.
-add_image_size( 'sidebar-featured', 75, 75, true );
+add_image_size( 'card-ratio32', 720, 480, true );
+add_image_size( 'icon-ratio32', 150, 100, true );
 
 // Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );

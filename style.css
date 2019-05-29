@@ -1,7 +1,9 @@
-/* SETUP | SETUP-2911 | STYLE - 2019-05-25 3:55 PM */
+/* SETUP | PROTOTYPE-VIDEOLOG | STYLE - 2019-05-24 12:03 AM */
+/* SETUP | PROTOTYPE-STARTER | STYLE - 2019-05-13 10:08 AM */
+/* SETUP | SETUP-2911 | STYLE - 2019-05-27 1:29 AM */
 /*
-Theme Name: SETUP-2911
-Theme URI: https://setup-2911.basestructure.com/
+Theme Name: PROTOTYPE-VIDEOLOG
+Theme URI: https://prototype-videolog.basestructure.com/
 Description: This is the prototype theme created by Mark Corpuz.
 Author: Mark Corpuz
 Author URI: https://markcorpuz.com/
@@ -15,7 +17,7 @@ Template: genesis
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Text Domain: setup-2911
+Text Domain: prototype-videolog
 */
 /* SETUP | WP | 2911_SETUP | NORMALIZE - 2019-04-02 */
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -205,11 +207,12 @@ a.shadow:link, a.shadow:hover {
 /* SETUP | VARIABLES | 2911_SETUP | WIDTH-LAYOUT - 2019-04-02 */
 /* SETUP | VARIABLES | 2911_SETUP | WIDTH-RANGE - 2019-04-02 */
 /* SETUP | VARIABLES | 2911_SETUP | WIDTH-SPACE - 2019-04-02 */
+/* SETUP | VARIABLES | 2911_SETUP | WIDTH-LINE - 2019-05-27 */
 /* SETUP | VARIABLES | 2911_SETUP | RESPONSIVE-RANGE - 2019-04-02 */
 /* SETUP | VARIABLES | 2911_SETUP | FONTFAMILY - 2019-04-16 */
-/* SETUP | VARIABLES | 2911_SETUP | FONTSIZE - 2019-04-02 */
+/* SETUP | VARIABLES | 2911_PROTOTYPE-STARTER | FONTSIZE - 2019-05-10 */
 /* SETUP | VARIABLES | 2911_SETUP | FONTWEIGHT - 2019-04-02 */
-/* SETUP | VARIABLES | 2911_SETUP | LINEHEIGHT - 2019-04-02 */
+/* SETUP | VARIABLES | 2911_SETUP | LINEHEIGHT - 2019-05-26 */
 /* SETUP | VARIABLES | 2911_SETUP | LETTERSPACING - 2019-04-02 */
 /* SETUP | VARIABLES | 2911_SETUP | COLOR - 2019-04-02 */
 /* SETUP | COLOR | 2911_SETUP | COLOR - 2019-04-02 */
@@ -1019,7 +1022,7 @@ img.alignright, .featured-content a.alignright .entry-image {
 .textjustify {
   text-align: justify; }
 
-/* SETUP | CONTENT | 2911_SETUP | BUTTON - 2019-04-02 */
+/* SETUP | CONTENT | 2911_SETUP | BUTTON - 2019-05-27 */
 .button,
 a.button, .button:link,
 a.button:link, .button:active,
@@ -1089,43 +1092,43 @@ a.button.button-round, .content .wp-block-button .wp-block-button__link {
 
 .button, .content .wp-block-button .wp-block-button__link, .content .wp-block-button .wp-block-button__link:focus,
 .content .wp-block-button .wp-block-button__link:hover, .content .wp-block-button.button .wp-block-button__link {
-  padding: 1rem 1.5rem; }
+  padding: 1rem 1.5rem !important; }
 
 .button-tiny,
 .button-tiny.button, .content .wp-block-button.button-tiny .wp-block-button__link {
-  padding: 0.0625rem 0.3125rem; }
+  padding: 0.0625rem 0.3125rem !important; }
 
 .button-xxxsml,
 .button-xxxsml.button, .content .wp-block-button.button-xxxsml .wp-block-button__link {
-  padding: 0.125rem 0.5rem; }
+  padding: 0.125rem 0.5rem !important; }
 
 .button-xxsml,
 .button-xxsml.button, .content .wp-block-button.button-xxsml .wp-block-button__link {
-  padding: 0.25rem 0.5rem; }
+  padding: 0.25rem 0.5rem !important; }
 
 .button-xsml,
 .button-xsml.button, .content .wp-block-button.button-xsml .wp-block-button__link {
-  padding: 0.3125rem 1.5rem; }
+  padding: 0.3125rem 1.5rem !important; }
 
 .button-sml,
 .button-sml.button, .content .wp-block-button.button-sml .wp-block-button__link {
-  padding: 0.5rem 1.5rem; }
+  padding: 0.5rem 1.5rem !important; }
 
 .button-med,
 .button-med.button, .content .wp-block-button.button-med .wp-block-button__link {
-  padding: 1rem 1.5rem; }
+  padding: 1rem 1.5rem !important; }
 
 .button-lrg,
 .button-lrg.button, .content .wp-block-button.button-lrg .wp-block-button__link {
-  padding: 1.5rem 3rem; }
+  padding: 1.5rem 3rem !important; }
 
 .button-xlrg,
 .button-xlrg.button, .content .wp-block-button.button-xlrg .wp-block-button__link {
-  padding: 2rem 4rem; }
+  padding: 2rem 4rem !important; }
 
 .button-huge,
 .button-huge.button, .content .wp-block-button.button-huge .wp-block-button__link {
-  padding: 3rem 8rem; }
+  padding: 3rem 8rem !important; }
 
 .button.button-black,
 a.button.button-black, .button.button-black:link,
@@ -1208,6 +1211,114 @@ a.button-red:hover {
     .full-width-content .site-container .wp-block-cover.alignfull {
       margin-left: -2rem;
       margin-right: -2rem; } }
+
+/* SETUP | CONTENT | 2911_SETUP | BORDER - 2019-05-27 */
+.border, .border-top, .border-right, .border-bottom, .border-left {
+  border-style: solid; }
+
+.border-line {
+  border-style: solid; }
+
+.border-dashed {
+  border-style: dashed; }
+
+.border-dotted {
+  border-style: dotted; }
+
+.border-double,
+.border.border-double {
+  border-style: double; }
+
+.border {
+  border-width: 0.063rem; }
+
+.border-top {
+  border-top-width: 0.063rem; }
+
+.border-right {
+  border-right-width: 0.063rem; }
+
+.border-bottom {
+  border-bottom-width: 0.063rem; }
+
+.border-left {
+  border-left-width: 0.063rem; }
+
+.border-thinner {
+  border-width: 0.063rem; }
+
+.border-thin {
+  border-width: 0.125rem; }
+
+.border-normal {
+  border-width: 0.313rem; }
+
+.border-thick {
+  border-width: 0.625rem; }
+
+.border-double,
+.border.border-double {
+  border-width: 0.25rem; }
+
+.border, .border-top, .border-right, .border-bottom, .border-left {
+  border-color: #808080; }
+
+.border.line-color-lightest {
+  border-color: #f5f5f5; }
+
+.border.line-color-lighter {
+  border-color: #bfbfbf; }
+
+.border.line-color-light {
+  border-color: #737373; }
+
+.border.line-color-dark {
+  border-color: #595959; }
+
+.border.line-color-darker {
+  border-color: #4d4d4d; }
+
+.border.line-color-darkest {
+  border-color: #333333; }
+
+.border.line-color-black {
+  border-color: #000000; }
+
+.border.line-color-white {
+  border-color: #ffffff; }
+
+.border.line-color-gray {
+  border-color: #666666; }
+
+.border-zero {
+  border: 0; }
+
+.border-top-zero {
+  border-top: 0; }
+
+.border-right-zero {
+  border-right: 0; }
+
+.border-bottom-zero {
+  border-bottom: 0; }
+
+.border-left-zero {
+  border-left: 0; }
+
+.border-none {
+  border: none; }
+
+.border-top-none, .border-right-only, .border-bottom-only, .border-left-only {
+  border-top: 0; }
+
+.border-right-none, .border-top-only, .border-bottom-only, .border-left-only {
+  border-right: 0; }
+
+.border-bottom-none, .border-top-only, .border-right-only, .border-left-only {
+  border-bottom: 0; }
+
+.border-left-none, .border-top-only, .border-right-only, .border-bottom-only {
+  border-left: 0; }
 
 /* SETUP | TYPE | 2911_SETUP | FAMILY - 2019-04-16 */
 .fontfamily-body {
@@ -1323,7 +1434,7 @@ a.button-red:hover {
 .wp-block-cover.fontsize-xxlrg .wp-block-cover-text,
 .site-container .wp-block-cover.fontsize-xxlrg .wp-block-cover-text, .fontsize-xxlrg {
   font-size: 5rem;
-  line-height: 1.1; }
+  line-height: 1.05; }
   @media only screen and (max-width: 48rem) {
     .wp-block-cover.fontsize-xxlrg .wp-block-cover-text,
     .site-container .wp-block-cover.fontsize-xxlrg .wp-block-cover-text, .fontsize-xxlrg {
@@ -1336,7 +1447,7 @@ a.button-red:hover {
 .wp-block-cover.fontsize-xxxlrg .wp-block-cover-text,
 .site-container .wp-block-cover.fontsize-xxxlrg .wp-block-cover-text, .fontsize-xxxlrg {
   font-size: 6rem;
-  line-height: 1.1; }
+  line-height: 1.025; }
   @media only screen and (max-width: 48rem) {
     .wp-block-cover.fontsize-xxxlrg .wp-block-cover-text,
     .site-container .wp-block-cover.fontsize-xxxlrg .wp-block-cover-text, .fontsize-xxxlrg {
@@ -4016,62 +4127,58 @@ th:first-child {
 /* SETUP | GENESIS | GENESIS-SAMPLE-291 | SITE-FOOTER - 2019-04-02 */
 /* Site Footer
 ---------------------------------------------------------------------------- */
-/* SETUP | HEADER | 2911_SETUP | HEADER-LEFTRIGHT-LINE_FLEX - 2019-04-04 */
-/* Note: The width defined on the custom logo forces the title area to be limited */
+/* SETUP | HEADER | 2911_SETUP | HEADER-TOPDOWN-TYPE-STARTER_FLEX - 2019-05-10 */
 .site-header {
   background-color: #f0f0f0; }
 
 .site-header > .wrap {
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start; }
 
 .title-area {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end; }
+  flex-direction: column;
+  justify-content: flex-start; }
 
 .wp-custom-logo .title-area {
-  max-width: 100% !important; }
+  max-width: none !important;
+  padding-top: 0 !important; }
 
-.custom-logo-link,
-a.custom-logo-link {
+.custom-logo,
+img.custom-logo {
   max-width: 150px;
-  margin-right: 1rem; }
+  margin-bottom: 0.5rem; }
 
 .site-title {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1;
-  text-align: center;
-  margin-bottom: 0;
-  margin-right: 0.5rem; }
+  margin-bottom: 0; }
 
 .header-image .site-title {
   color: transparent;
   margin-bottom: 0; }
 
 .site-description {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 1;
-  text-align: center;
   margin-bottom: 0; }
 
-.site-header .nav-primary {
-  grid-column: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-row: 1;
-  margin-bottom: 1rem; }
-  @media only screen and (min-width: 64rem) {
-    .site-header .nav-primary {
-      grid-column: 2;
-      grid-row: 3;
-      -ms-grid-column: 2;
-      -ms-grid-row: 3;
-      margin-bottom: 0; } }
+.nav-primary {
+  margin-top: 0.5rem; }
+
+.menu-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 1rem; }
+
+.menu-primary .menu-item {
+  margin-left: 0;
+  margin-right: 1rem; }
 
 /* SETUP | INNER | 2911_SETUP | INNER_GRID - 2019-04-02 */
 .site-inner {
@@ -4990,7 +5097,7 @@ a.custom-logo-link {
 .wp-block-pullquote[class*="align"] .wp-block-pullquote__citation {
   text-align: center; }
 
-/* SETUP | GUTTENBERG | 2911_SETUP | BUTTONS - 2019-04-02 */
+/* SETUP | GUTTENBERG | 2911_SETUP | BUTTONS - 2019-05-27 */
 .content .wp-block-button.button,
 .content .wp-block-button.button-tiny,
 .content .wp-block-button.button-xxxsml,
@@ -5001,7 +5108,7 @@ a.custom-logo-link {
 .content .wp-block-button.button-lrg,
 .content .wp-block-button.button-xlrg,
 .content .wp-block-button.button-huge {
-  padding: 0; }
+  padding: 0 !important; }
 
 .content .wp-block-button.is-style-squared .wp-block-button__link {
   border-radius: 0; }
@@ -5075,6 +5182,22 @@ hr.wp-block-separator {
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
+/* SETUP | FEATURELIST | 2911_MODEL-TRV | FEATURELIST-PODCASTS - 2019-05-17 */
+.featurelist-icontitle .listing-item {
+  display: flex;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600; }
+
+.featurelist-icontitle .listing-item img {
+  width: 50px;
+  min-width: 50px;
+  height: auto;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  float: left; }
+
 /* SETUP | GUIDE | 2911_SETUP | LABEL - 2019-04-02 */
 .guide-label.indent, .guide-line.indent, .guide-summary.indent, .guide-box.indent {
   margin-left: 2rem; }
