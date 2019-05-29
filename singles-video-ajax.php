@@ -50,18 +50,18 @@ class SWPVideoTemplateAJAX {
 				*/
 
 				?>
-				<div id="item-navi-entry">
-					<div id="item-navi-icon">
+				<li class="list-entry">
+					<div class="item-icon">
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>">
 							<?php echo $swp_attachment; ?>
 						</a>
 					</div>
-					<div id="item-navi-title">
+					<div class="item-info">
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>">
 							<?php echo get_the_title(); ?>
 						</a>
 					</div>
-				</div>
+				</ul>
 				<?php
 				
 			}

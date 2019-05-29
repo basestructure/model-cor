@@ -52,6 +52,11 @@ class SWPVideoTemplate {
 		// Video Embed
 		// video_embed
 		// [su_dailymotion url="" width="600" height="400" responsive="yes" autoplay="no" background="#FFC300" foreground="#F7FFFD" highlight="#171D1B" logo="yes" quality="380" related="yes" info="yes" class=""]
+
+	}
+
+	// DISPLAY LIST-ICONINFO
+	public function swp_display_listiconinfo_func() {
 		
 		// call video template file for navigator
 		$swp_navi = new SWPVideoTemplateAJAX();
@@ -89,6 +94,9 @@ class SWPVideoTemplate {
 
 			// DISPLAY VIDEO
 			add_action( 'genesis_before_content_sidebar_wrap', array( $this, 'swp_display_video_func' ) );
+
+			// DISPLAY LIST-ICONINFO
+			add_action( 'genesis_before_sidebar_widget_area', array( $this, 'swp_display_listiconinfo_func' ) );
 
 			// DISPLAY VIDEO
 			add_action( 'genesis_entry_content', array( $this, 'swp_display_native_content_func' ) );
