@@ -61,7 +61,7 @@ class SWPVideoTemplateAJAX {
 							<?php echo get_the_title(); ?>
 						</a>
 					</div>
-				</ul>
+				</li>
 				<?php
 				
 			}
