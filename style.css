@@ -1,4 +1,4 @@
-/* SETUP | PROTOTYPE-VIDEOLOG | STYLE - 2019-05-24 12:03 AM */
+/* SETUP | PROTOTYPE-VIDEOLOG | STYLE - 2019-05-30 5:06 PM */
 /* SETUP | PROTOTYPE-STARTER | STYLE - 2019-05-13 10:08 AM */
 /* SETUP | SETUP-2911 | STYLE - 2019-05-27 1:29 AM */
 /*
@@ -4478,7 +4478,10 @@ img.custom-logo {
   padding: 1.5rem;
   margin-bottom: 1rem; }
 
-/* SETUP | LOOP | 2911_SETUP | ENTRYTITLE - 2019-04-02 */
+/* SETUP | LOOP | 2911_PROTOTYPE-VIDEOLOG | ENTRYTITLE - 2019-05-30 */
+.single-video .entry-title {
+  margin-bottom: 0; }
+
 .featured-content .entry-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem; }
@@ -5182,6 +5185,36 @@ hr.wp-block-separator {
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
+/* SETUP | ITEM | 2911_SETUP | 2911_PROTOTYPE-VIDEOLOG - 2019-05-30 */
+.genesis-sidebar-title {
+  display: none; }
+
+.module-videobacknext .module-header {
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: black;
+  padding: 2px 6px;
+  color: white;
+  line-height: 1; }
+
+.module-videofeaturelist .module-inner.iconinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 1rem; }
+
+.module-videofeaturelist .module-inner.iconinfo .item-info {
+  line-height: 1.2;
+  font-weight: 600; }
+
+.module-videofeaturelist .module-inner.iconinfo a.item-textlink,
+.module-videofeaturelist .module-inner.iconinfo a.item-textlink:link {
+  color: #333; }
+
+.module-videobacknext .module-inner.iconinfo a.item-textlink:hover,
+.module-videofeaturelist .module-inner.iconinfo a.item-textlink:hover {
+  color: #666; }
+
 /* SETUP | FEATURELIST | 2911_MODEL-TRV | FEATURELIST-PODCASTS - 2019-05-17 */
 .featurelist-icontitle .listing-item {
   display: flex;

@@ -1,0 +1,72 @@
+/* SETUP | LOOP | 2911_PROTOTYPE-VIDEOLOG | ENTRYTITLE - 2019-05-30 */
+//* SETUP | LOOP | 2911_SETUP | ENTRYTITLE - 2019-04-02 */
+
+// -------------------------------------
+// EXTEND
+
+// ENTRY-TITLE
+
+	%entrytitle {}
+		%entrytitle--singlevideo {
+			margin-bottom: 0;
+		}
+		%entrytitle--archive {}
+		%entrytitle--category {}
+		%entrytitle--tag {}
+		%entrytitle--featuredcontent {
+			font-size: #{$fontsize-xsml}rem;
+			margin-bottom: #{$space-sml}rem;
+		}
+		%entrytitle--featuredpost {}
+		%entrytitle--featuredpage {}
+
+	%entryheader-entrytitle {}
+
+	%entrycontent-entrytitle {}
+
+	%entryfooter-entrytitle {}
+
+
+// -------------------------------------
+// SELECTORS
+
+// ENTRY-TITLE
+
+	.entry-title {
+		@extend %entrytitle !optional;
+	}
+
+		.single-video .entry-title {
+			@extend %entrytitle--singlevideo !optional;
+		}
+
+		.archive .entry-title {
+			@extend %entrytitle--archive !optional;
+		}
+		.category .entry-title {
+			@extend %entrytitle--category !optional;
+		}
+		.tag .entry-title {
+			@extend %entrytitle--tag !optional;
+		}
+		.featured-content .entry-title {
+			@extend %entrytitle--featuredcontent !optional;
+		}
+		.featured-post .entry-title {
+			@extend %entrytitle--featuredpost !optional;
+		}
+		.featured-page .entry-title {
+			@extend %entrytitle--featuredpage !optional;
+		}
+
+	.entry-header .entry-title {
+		@extend %entryheader-entrytitle !optional;
+	}
+
+	.entry-content .entry-title {
+		@extend %entrycontent-entrytitle !optional;
+	}
+
+	.entry-footer .entry-title {
+		@extend %entryfooter-entrytitle !optional;
+	}

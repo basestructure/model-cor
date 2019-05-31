@@ -1,4 +1,4 @@
-/* SETUP | PROTOTYPE-VIDEOLOG | STYLE - 2019-05-24 12:03 AM */
+/* SETUP | PROTOTYPE-VIDEOLOG | STYLE - 2019-05-30 5:06 PM */
 /* SETUP | PROTOTYPE-STARTER | STYLE - 2019-05-13 10:08 AM */
 /* SETUP | SETUP-2911 | STYLE - 2019-05-27 1:29 AM */
 // 2.9.1.1_B
@@ -126,9 +126,9 @@
 // -------------------------------------------------------------------- CREDIT | 2019-04-02
 @import 	"credit/2911_setup/credit-swp_grid";
 
-// -------------------------------------------------------------------- LOOP | 2019-04-02
+// -------------------------------------------------------------------- LOOP | 2019-05-30
 @import 	"loop/2911_setup/entry";
-@import 	"loop/2911_setup/entrytitle";
+			@import 	"loop/2911_prototype-videolog/entrytitle";
 @import 	"loop/2911_setup/entrymeta";
 @import 	"loop/2911_setup/entryimage";
 @import 	"loop/2911_setup/authorbox";
@@ -152,6 +152,9 @@
 @import 	"gutenberg/2911_setup/buttons";
 @import 	"gutenberg/2911_setup/uncategorized";
 //@import 	"gutenberg/2911_setup/styleeditor";
+
+// -------------------------------------------------------------------- MODULE | 2019-05-30
+			@import 	"module/2911_prototype-videolog/entry-iconinfo";
 
 // -------------------------------------------------------------------- DISPLAYPOST | 2019-05-24
 			@import 	"displayposts/2911_prototype-videolog/featurelist-videos";

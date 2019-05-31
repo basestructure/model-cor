@@ -1,0 +1,65 @@
+/* SETUP | ITEM | 2911_SETUP | 2911_PROTOTYPE-VIDEOLOG - 2019-05-30 */
+
+// -------------------------------------
+// EXTEND
+
+
+// -------------------------------------
+// SELECTORS
+
+	.genesis-sidebar-title {
+		display: none;
+	}
+
+	// MODULE-VIDEOBACKNEXT
+
+	.module-videobacknext {}
+	.module-videofeaturelist {}
+
+	.module-videobacknext .module-header {
+		//font-size: 0.7rem;
+		text-transform: uppercase;
+		display: inline-block;
+		background-color: black;
+		padding: 2px 6px;
+		color: white;
+		line-height: 1;
+	}
+	.module-videobacknext .module-inner {}
+
+	// MODULE-VIDEOFEATURELIST
+
+	.module-videofeaturelist .module-header {}
+	.module-videofeaturelist .module-inner {}
+
+	.module-videofeaturelist .module-inner.iconinfo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.module-videofeaturelist .module-inner.iconinfo .item-icon {}
+
+	.module-videofeaturelist .module-inner.iconinfo .item-icon img {}
+
+	.module-videofeaturelist .module-inner.iconinfo .item-info {
+		line-height: 1.2;
+		font-weight: 600;
+	}
+
+	.module-videofeaturelist .module-inner.iconinfo a.item-textlink,
+	.module-videofeaturelist .module-inner.iconinfo a.item-textlink:link, {
+		color: #333;
+	}
+
+	.module-videobacknext .module-inner.iconinfo a.item-textlink:hover,
+	.module-videofeaturelist .module-inner.iconinfo a.item-textlink:hover, {
+		color: #666;
+	}
+
+	.entry-iconinfo-header {
+		//font-size: 0.75rem;
+	}
+
+	.entry-iconinfo {}
