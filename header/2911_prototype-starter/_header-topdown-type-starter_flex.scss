@@ -1,0 +1,271 @@
+/* SETUP | HEADER | 2911_SETUP | HEADER-TOPDOWN-TYPE-STARTER_FLEX - 2019-05-10 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-HEADER
+
+	%siteheader {
+
+		// BG
+		background-color: #f0f0f0;
+
+	}
+	%siteheaderwrap {
+
+		// SPACING
+		padding: 2rem;
+
+		// FLEX
+		display: flex;
+		flex-direction: column;			// from top to bottom
+		justify-content: flex-start;	// left aligned
+
+	}
+
+	// TITLE-AREA
+
+	%titlearea {
+
+		// FLEX
+		display: flex;
+		flex-direction: column;			// from top to bottom
+		justify-content: flex-start;	// left aligned
+
+	}
+
+	// CUSTOM-LOGO
+
+	%wpcustomlogo-titlearea {
+
+		// SPACING
+		max-width: none !important;		// overrides WP defined width
+		padding-top: 0 !important;		// overrides WP top padding
+
+	}
+	%wpcustomlogo-sitetitle {}
+	%wpcustomlogo-sitedescription {}
+
+	%customlogo-link {}
+	%customlogo {
+
+		// SPACING
+		max-width: 150px;				// adds your own specific width (change this)
+		margin-bottom: 0.5rem;
+
+	}
+
+	// HEADER-WIDGET-AREA
+
+	%headerwidgetarea {}
+
+	// SITE-TITLE
+
+	%sitetitle {
+
+		// TYPOGRAPHY
+		font-family: $fontfamily-sitetitle;				// fontfamily
+		font-size: #{$fontsize-sitetitle}rem;			// fontsize
+		font-weight: $fontweight-thick;
+		line-height: 1;
+		//text-align: center;
+
+		// SPACING
+		margin-bottom: 0;
+
+		// HIDE
+		//display: none;
+
+	}
+	%sitetitle-a {}
+	%sitetitle-hvr {}
+
+	// SITE-TITLE (HEADER-IMAGE)
+
+	%headerimage-sitetitle {
+
+		// COLOR
+		color: transparent;
+
+		// SPACING
+		margin-bottom: 0;
+
+	}
+	%headerimage-sitetitle-a {}
+	%headerimage-sitetitle-hvr {}
+
+	// SITE-DESCRIPTION
+
+	%sitedescription {
+
+		// TYPOGRAPHY
+		font-family: $fontfamily-sitedescription;		// fontfamily
+		font-size: #{$fontsize-sitedescription}rem;		// fontsize
+		font-weight: $fontweight-thin;
+		line-height: 1;
+		//text-align: center;
+
+		// SPACING
+		margin-bottom: 0;
+
+		// HIDE
+		//display: none;
+
+	}
+
+	// SITE-DESCRIPTION (HEADER-IMAGE)
+
+	%headerimage-sitedescription {}
+
+	// NAV-PRIMARY
+
+	%navprimary {
+
+		// SPACING
+		margin-top: 0.5rem;
+
+	}
+	%navprimarywrap {}
+
+	%header-navprimary {}
+	%header-navprimarywrap {}
+
+	// MENU-PRIMARY
+
+	%menuprimary {
+
+		// FLEX
+		display: flex;
+		flex-direction: row;			// from left to right
+		justify-content: flex-start;	// left aligned
+
+		// TYPOGRAPHY
+		font-size: 1rem;
+
+	}
+
+	// MENU-ITEM
+
+	%menuitem--menuprimary {
+
+		// SPACING
+		margin-left: 0;
+		margin-right: 1rem;
+
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-HEADER
+
+	.site-header {
+		@extend %siteheader !optional;
+	}
+	.site-header > .wrap {
+		@extend %siteheaderwrap !optional;
+	}
+
+	// HEADER-WIDGET-AREA
+
+	.header-widget-area {
+		@extend %headerwidgetarea !optional;
+	}
+
+	// TITLE-AREA
+
+	.title-area {
+		@extend %titlearea !optional;
+	}
+
+	// CUSTOM-LOGO
+
+	.wp-custom-logo .title-area {
+		@extend %wpcustomlogo-titlearea !optional;
+	}
+	.wp-custom-logo .site-title {
+		@extend %wpcustomlogo-sitetitle !optional;
+	}
+	.wp-custom-logo .site-description {
+		@extend %wpcustomlogo-sitetitle !optional;
+		@extend %wpcustomlogo-sitedescription !optional;
+	}
+
+	.custom-logo-link,
+	a.custom-logo-link {
+		@extend %customlogo-link !optional;
+	}
+
+	.custom-logo,
+	img.custom-logo {
+		@extend %customlogo !optional;
+	}
+
+	// SITE-TITLE
+
+	.site-title {
+		@extend %sitetitle !optional;
+
+		a {
+			@extend %sitetitle-a !optional;
+		}
+		a:hover {
+			@extend %sitetitle-hvr !optional;
+		}
+	}
+
+	// SITE-TITLE (HEADER IMAGE)
+
+	.header-image .site-title {
+		@extend %headerimage-sitetitle !optional;
+
+		a {
+			@extend %headerimage-sitetitle-a !optional;
+		}
+		a:hover {
+			@extend %headerimage-sitetitle-hvr !optional;
+		}
+	}
+
+	// SITE-DESCRIPTION
+
+	.site-description {
+		@extend %sitedescription !optional;
+	}
+
+	// SITE-DESCRIPTION (HEADER-IMAGE)
+
+	.header-image .site-description {
+		@extend %headerimage-sitedescription !optional;
+	}
+
+	// NAV-PRIMARY
+
+	.nav-primary {
+		@extend %navprimary !optional;
+	}
+	.nav-primary > .wrap {
+		@extend %navprimarywrap !optional;
+	}
+
+	// NAV-PRIMARY (INSIDE SITE-HEADER)
+	
+	.site-header .nav-primary {
+		@extend %header-navprimary !optional;
+	}
+	.site-header .nav-primary > .wrap {
+		@extend %header-navprimarywrap !optional;
+	}
+
+	// MENU-PRIMARY
+
+	.menu-primary {
+		@extend %menuprimary !optional;
+	}
+
+	// MENU-ITEM (MENU-PRIMARY)
+
+	.menu-primary .menu-item {
+		@extend %menuitem--menuprimary !optional;
+	}
